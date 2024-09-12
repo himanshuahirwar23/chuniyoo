@@ -1,0 +1,737 @@
+@font-face {
+    font-family: kobe;
+    src: url(./KobeWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: staff;
+    src: url(./Staff-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+#main {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+#cursor {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1.5px solid black;
+    transition: all ease 0.10s;
+    position: absolute;
+    position: fixed;
+    z-index: 2000;
+}
+
+.page1 {
+    width: 100%;
+    height: 220vh;
+    /* background-image: url(https://images.ctfassets.net/8b1jz4cf6kyy/5Vb2csMQr0CWhjFEV089n3/deddda89cbafea639aa140fdff6f3113/03-All-Perspective__1_.jpg?w=2200&fm=webp&q=92); */
+    /* object-fit: cover; */
+    position: relative;
+    overflow: hidden;
+}
+
+.main-bg {
+    width: 100vw;
+    height: 220vh;
+    object-position: center;
+}
+
+.main-bg1 {
+    width: 100%;
+    height: 300vh;
+    /* background-size: cover; */
+    object-position: center;
+    /* object-fit: cover; */
+}
+
+.chungi {
+    width: 2rem;
+    position: absolute;
+    position: fixed;
+    margin: 0em;
+    z-index: 99;
+    margin-left: 35px;
+    text-align: center;
+    top: 3rem;
+
+}
+
+.chungi h1 {
+    font-size: 47px;
+    font-weight: 590;
+    position: fixed;
+    font-family: "voyage";
+    z-index: 99;
+    line-height: 2rem;
+}
+
+#line {
+    width: 50px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    position: fixed;
+    top: 4rem;
+    left: 48%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    z-index: 99;
+}
+
+.star {
+    width: 2rem;
+    position: absolute;
+    color: black;
+    position: fixed;
+    right: 5%;
+    z-index: 99;
+    top: 3rem;
+}
+
+.semicircle {
+    width: 100vw;
+    height: 150vh;
+    background-color: #f3eee8;
+    border-radius: 120rem 120rem 0% 0%;
+    position: absolute;
+    bottom: 0%;
+
+}
+
+.semicircle>h2 {
+    font-size: 120px;
+    text-align: center;
+    margin-top: 20rem;
+    font-family: voyage;
+    font-weight: 100;
+}
+
+.semicircle>h4 {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: gilroy;
+    font-weight: 300;
+}
+
+.para {
+    margin-top: 4rem;
+    width: 330px;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    /* background-color: blueviolet; */
+    margin-left: 30rem;
+    text-align: center;
+    line-height: 21px;
+}
+
+.para>p {
+    font-size: 15px;
+    font-family: Kobe;
+}
+
+.page2 {
+    width: 100%;
+    height: 140vh;
+    background-color: #f3eee8;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+
+}
+
+#card {
+    width: 70vw;
+    height: 95vh;
+    background-color: red;
+    position: absolute;
+    margin: 10vw 15vw;
+    background-image: url(./img/Cards-1.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.img-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.card2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.card2 {
+    width: 50vw;
+    overflow: hidden;
+    height: 80vh;
+    /* background-color: red; */
+    top: -60%;
+    left: 25%;
+    position: absolute;
+}
+
+
+.page4 {
+    width: 100%;
+    height: 70vh;
+    background-color: #f3eee8;
+    position: relative;
+}
+
+.page5 {
+    width: 100%;
+    overflow: hidden;
+    height: 300vh;
+    position: relative;
+    /* background-image: url(./img/2.webp);
+    object-fit: cover; */
+}
+
+
+
+.page6 {
+    width: 100%;
+    height: 100vh;
+    background-color: #f3eee8;
+    object-fit: cover;
+    display: flex;
+    overflow: hidden;
+}
+
+.left1 {
+    width: 50vw;
+    height: 92vh;
+    margin: 2vw 0vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-bg2 {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.right1 {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+
+}
+
+#smile img {
+    width: 4vw;
+    top: 25%;
+    left: 50%;
+    /* background-color: red; */
+    position: absolute;
+    -webkit-animation: rotate 1.6s ease-in-out infinite;
+    animation: rotate 1.6s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+#para2 {
+    width: 30vw;
+    text-align: center;
+    font-family: kobe;
+    padding: 22px;
+    height: 10vw;
+    margin-left: 25%;
+    margin-bottom: -50%;
+    /* background-color: aquamarine; */
+}
+
+.page7 {
+    width: 100%;
+    min-height: 170vh;
+    background-color: #f3eee8;
+    display: flex;
+    position: relative;
+}
+
+.left2 {
+    width: 60%;
+    height: 140vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+
+.left2-img {
+    width: 100%;
+    object-fit: cover;
+    height: 140vh;
+}
+
+.right2 {
+    width: 60%;
+    position: absolute;
+    background-color: salmon;
+    height: 100vh;
+    overflow: hidden;
+    right: 0%;
+}
+
+.right2-img {
+    width: 100%;
+    height: 100%;
+}
+
+.page8 {
+    width: 100%;
+    background-color: crimson;
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.page8-bg {
+    width: 100%;
+    object-fit: cover;
+    height: 120vh;
+}
+
+.page9 {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+
+    background-color: #f3eee8;
+
+}
+
+.more-work {
+    width: 40rem;
+    height: 80vh;
+    top: 28%;
+    position: absolute;
+    left: 25%
+}
+
+.more-work h1 {
+    font-size: 9vw;
+    font-weight: 300;
+    line-height: 1.1;
+    text-transform: capitalize;
+    font-weight: 590;
+    text-align: center;
+    font-family: "voyage";
+
+}
+
+.more-work h4 {
+    font-size: 5vw;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-weight: 590;
+    text-align: center;
+    font-family: "voyage";
+    padding-top: 110px;
+
+}
+
+
+.page10 {
+    width: 100%;
+    height: 260vh;
+    position: relative;
+    background-color: #f3eee8;
+    display: flex;
+}
+
+.left-pg10 {
+    background-color: aquamarine;
+    width: 60vw;
+    height: 160vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-pg10>video {
+    width: 60vw;
+    height: 160vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.right-pg10 {
+    /* background-color: rgb(0, 0, 0); */
+    height: 160vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10rem;
+}
+
+.right-pg10>img {
+    object-fit: cover;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.centre-pg10 {
+    width: 60vw;
+    height: 85vh;
+    /* background-color: black; */
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    transform: translate(37%, -22%);
+}
+
+.centre-bg {
+    width: 45vw;
+    object-fit: cover;
+    height: 85vh;
+
+}
+
+.centre-right {
+    width: 15vw;
+    height: 85vh;
+    /* background-color: #fff; */
+}
+
+.centre-right>h1 {
+    font-size: 5vw;
+    padding-left: 15px;
+    font-weight: 590;
+    position: fixed;
+    font-family: "voyage";
+    position: absolute;
+    bottom: 0%;
+}
+
+.hori1 {
+    background-color: #88b2c4;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    height: 4rem;
+}
+
+.hori2 {
+    height: 6rem;
+    position: absolute;
+    width: 20vw;
+    transform: translateX(200%);
+    border-radius: 30px 30px 0 0;
+
+    bottom: 0%;
+    background-color: #88b2c4;
+
+}
+
+.hori2>h5 {
+    text-align: center;
+    font-family: kobe;
+    font-size: 1.05rem;
+    line-height: 1.1 !important;
+    font-weight: 300;
+    padding-top: 15px;
+}
+
+.page11 {
+    width: 100%;
+    height: 250vh;
+    position: relative;
+    background: #A0C0CD;
+    display: flex;
+
+}
+
+.pg11-h1 {
+    width: 60vw;
+    height: 30vh;
+    margin-top: 21vw;
+    margin-left: 22vw;
+    display: flex;
+    position: relative;
+    /* background-color: #fff; */
+}
+
+.pg11-h1 span h1 {
+    font-size: 9rem;
+    font-family: voyage;
+    /* background-color: brown; */
+    height: 30vh;
+    width: 17vw;
+    text-align: center;
+    line-height: .8;
+    font-weight: 500;
+
+}
+
+.pg11-h1 h2 {
+    width: 43vw;
+    font-size: 9rem;
+    font-family: voyage;
+    line-height: .8;
+
+    height: 30vh;
+    font-weight: 500;
+    /* background-color: blue; */
+    right: 0%;
+    padding-right: 6vw;
+    text-align: center;
+}
+
+.bright {
+    /* background-color: black; */
+    left: -4vw;
+    height: 17vw;
+    position: absolute;
+    left: 19vw;
+    top: 40vh;
+    width: 24vw;
+}
+
+.pg11-h2 {
+    height: 30vh;
+    position: absolute;
+    width: 25vw;
+    transform: translate(210%, 210%);
+    /* background-color: blue; */
+}
+
+.pg11-h2 h1 {
+    text-align: center;
+    font-size: 9rem;
+    z-index: 10;
+    line-height: .8;
+    font-weight: 500;
+    font-family: voyage;
+    padding: 20px 5px;
+}
+
+.centre-pg11 {
+    width: 17vw;
+    transform: translate(230%, 180%);
+
+    height: 45vh;
+    position: absolute;
+
+}
+
+.text2-pg11 {
+    width: 90vw;
+    position: absolute;
+    height: 50vh;
+    /* background-color: blue; */
+    bottom: 30%;
+    left: 4%;
+    padding: 50px 5px;
+}
+
+.text2-pg11 h1 {
+    text-align: center;
+    font-size: 9rem;
+    opacity:0.5;
+    z-index: 10;
+    line-height: .8;
+    font-weight: 500;
+    font-family: voyage;
+    /* padding: 20px 5px; */
+
+}
+
+.circle-pg11 {
+    width: 210px;
+    position: absolute;
+    height: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+    bottom: 20%;
+    left: 65%;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-pg11 h4 {
+    font-size: 33.6px;
+    font-weight: 100;
+    /* transform: rotate(-30deg); */
+    text-align: center;
+    font-family: kobe;
+}
+
+/* .circle-pg11:hover{
+    transition: linear 2s;
+
+    transform: rotate(-30deg);
+    
+} */
+.arrow{
+    position: absolute;
+    top: 5vw;
+    right: -2vw;
+    width: 4rem;
+    height: 4rem;
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+.page12 {
+    width: 100%;
+    height: 105vh;
+    /* overflow: hidden; */
+    position: relative;
+    background: #f6bac6;
+    /* background-color: ; */
+}
+
+.smile2 img {
+    width: 7.5vw;
+    top: 20%;
+    margin-left: 46vw;
+    position: absolute;
+    -webkit-animation: rotate 1.6s ease-in-out infinite;
+    animation: rotate 1.6s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+    transition: all linear 3s;
+}
+
+
+/* .text-pg12{
+    width: 2vw;
+    background-color: #fff;
+
+    height: 30vh;
+    
+} */
+.pg-12centre{
+    position: absolute;
+    position:relative;
+    overflow: hidden;
+    top: 35%;
+    left: 20%;
+    text-align: center;
+     width: 60vw;
+    /* background-color: rgb(110, 188, 58); */
+    height: 40vh;
+}
+.pg-12centre>h1{
+    color: #d73234;
+    font-family: "Voyage";
+    font-weight: 300;
+    font-size: 87.04px;
+
+}
+.pg-12centre>h1>span{
+    font-weight: 600;
+}
+
+.text-pg12{
+    width: auto;
+    padding-left: 22vw;
+    margin-top: 2vw;
+    /* background-color: aqua; */
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+.text-pg12>h3{
+    padding: 0px .5vw;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: "staff";
+
+    color: #d73234;
+}
+.end{
+    width: 100%;
+    /* background-color: aqua; */
+    height: 5vh;
+    display: flex;
+    position: absolute;
+    bottom: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end-prt1{
+    width: 30vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.end-prt2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    height: 5vh;
+    /* background-color: rgb(252, 252, 252); */
+}
+.end-prt1>h3{
+    font-size: .8rem;
+    font-weight: 300;
+    padding-left: 20px;
+    font-family: "staff";
+    color: #d73234;
+}
+.end-prt2>h3{
+    font-size: .8rem;
+    font-weight: 300;
+    padding-left: 120px;
+    font-family: "staff";
+    color: #d73234;
+}
